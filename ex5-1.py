@@ -5,7 +5,6 @@ print(calc_sum_diff(1,2))
 
 
 def greet(name,time):
-    return name+'おはようございます。'
 
     if time == "morming":
         return name + 'おはようございます。'
@@ -15,3 +14,21 @@ def greet(name,time):
         return name + 'こんばんわ。'
 
 print(greet('a','noon'))
+
+
+l = [10,30,20]
+max = l[0]
+for i in l:
+    if max <= i:
+        max = i
+
+def get_max(*args):
+    if len(args) == 0:
+        return 0
+    max = args[0]
+    for i in args:
+        if max <= i:
+            max = i
+    return max
+
+print(get_max())
