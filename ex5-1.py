@@ -14,4 +14,4 @@ def greet(name,time):
     elif time == "evening":
         return name + 'こんばんわ。'
 
-print(greet('a','morning'))
+print(greet('a','noon'))
